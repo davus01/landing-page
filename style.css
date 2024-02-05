@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Orbitron:wght@500&display=swap");
+
+:root {
+	--main-clr: #1a1a1a;
+	--accent: #39ff14; /* Vert fluo */
+	--contrast: #181818;
+	--border-radius: 5px;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Orbitron", sans-serif;
+	color: var(--contrast);
+	font-size: 16px;
+}
+
+ul,
+li {
+	list-style-type: none;
+}
+
+.container {
+	max-width: 1250px;
+	margin: auto;
+}
+
+.active {
+	background-color: var(--accent);
+	border-radius: var(--border-radius);
+	transition: background-color 0.3s ease-in-out;
+}
+
+.header {
+	background-color: var(--main-clr);
+	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+	transition: background-color 0.3s ease-in-out;
+}
+
+.header nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1em;
+	height: 96px;
+}
+
+.header img {
+	width: 54px;
+	border-radius: 50%;
+	object-fit: none;
+	transition: transform 0.3s ease-in-out;
+}
+
+.header ul {
+	display: flex;
+	justify-content: space-between;
+	width: 290px;
+}
+
+.header a {
+	text-decoration: none;
+	color: white;
+	padding: 0.5em 1em;
+	transition: color 0.3s ease-in-out;
+}
+
+.main-section {
+	background-image: url("./imgs/cosmos_hd_wallpaper_milky_way_night_sky_stars-1268663.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	min-height: 500px;
+	padding-top: 4em;
+}
+
+.main-section h1 {
+	color: var(--main-clr);
+	text-shadow: -1px 2px 5px #000000b3, -1px 3px 20px #0000003d,
+		0px 2px 8px #00000045, 1px -3px 0px #ffffffde;
+	font-size: 4.5em;
+	transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+.main-section p {
+	background: #ffffff45;
+	padding: 1.5em;
+	max-width: 800px;
+	margin: auto;
+	font-size: 1.1em;
+	border-radius: var(--border-radius);
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+	transition: box-shadow 0.3s ease-in-out;
+}
+
+.main-section button,
+form button {
+	border: none;
+	padding: 18px 40px;
+	margin-right: 30px;
+	cursor: pointer;
+	margin-top: 2em;
+	border-radius: var(--border-radius);
+	min-width: 150px;
+	transition: box-shadow 0.3s ease-in-out;
+}
+
+.main-section button:first-child {
+	background-color: var(--accent);
+	transition: background-color 0.3s ease-in-out;
+}
+
+.main-section button:hover {
+	box-shadow: -1px 1px 6px #4f4f4f8f;
+}
+
+.features {
+	text-align: center;
+	padding-top: 2em;
+}
+
+.features h2 {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	font-size: 1.5em;
+	transition: color 0.3s ease-in-out;
+}
+
+.features .features_container {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	margin-top: 2em;
+}
+
+.features .fa-solid,
+.features .fa-regular {
+	background-color: var(--main-clr);
+	color: white;
+	padding: 40px;
+	border-radius: 50%;
+	margin-bottom: 1em;
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+	transition: box-shadow 0.3s ease-in-out;
+}
+
+.features article {
+	max-width: 220px;
+	background: #80808014;
+	padding: 1.2em 0.8em;
+	border-radius: var(--border-radius);
+	margin-bottom: 1em;
+	box-shadow: -2px 4px 5px 2px #80808054, -1px 2px 15px 0px #80808030;
+	transition: box-shadow 0.3s ease-in-out;
+}
+
+.footer {
+	background: var(--contrast);
+	text-align: center;
+	font-size: 1.1em;
+	padding: 1em;
+	margin-top: 2em;
+	transition: background-color 0.3s ease-in-out;
+}
+
+.footer p,
+.footer i {
+	color: white;
+	transition: color 0.3s ease-in-out;
+}
+
+.footer a {
+	color: var(--accent);
+	text-decoration: none;
+	transition: color 0.3s ease-in-out;
+}
+
+.footer .social {
+	max-width: 220px;
+	margin: auto;
+	display: flex;
+	justify-content: space-around;
+	margin-top: 0.8em;
+}
+
+.about,
+.contact {
+	padding: 2.5em;
+	min-height: 65vh;
+}
+
+.about h2,
+.contact h2 {
+	font-size: 2.5em;
+	margin-bottom: 0.8em;
+	text-align: center;
+	transition: color 0.3s ease-in-out;
+}
+
+.about p {
+	font-size: 1.3em;
+	text-align: center;
+	transition: color 0.3s ease-in-out;
+}
+
+.contact_container {
+	display: flex;
+	justify-content: space-around;
+}
+
+.contact_container form {
+	max-width: 48%;
+}
+
+.contact_container iframe {
+	max-width: 48%;
+}
+
+form input {
+	width: 100%;
+	padding: 0.5em;
+	margin-bottom: 0.8em;
+	transition: box-shadow 0.3s ease-in-out;
+}
